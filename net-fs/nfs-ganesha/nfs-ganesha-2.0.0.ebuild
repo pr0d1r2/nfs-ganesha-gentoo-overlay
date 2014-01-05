@@ -18,6 +18,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="app-crypt/mit-krb5 net-libs/libtirpc[kerberos] dev-libs/jemalloc"
-DEPEND="app-doc/doxygen ${RDEPEND}"
+DEPEND="app-doc/doxygen
+	    net-fs/nfs-utils[nfsidmap,nfsv4,nfsv41,kerberos,libmount,nfsdcld]
+		${RDEPEND}"
 
 CMAKE_BUILD_TYPE="Release"
