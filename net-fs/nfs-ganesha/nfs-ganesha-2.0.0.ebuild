@@ -23,6 +23,8 @@ DEPEND="app-doc/doxygen
 
 CMAKE_BUILD_TYPE="Release"
 
+MAKEOPTS="-j1"
+
 pkg_pretend() {
 	is-flag -march=native && die 'cannot compile with -march=native in cflags'
 }
