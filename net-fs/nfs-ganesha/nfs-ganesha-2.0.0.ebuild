@@ -4,7 +4,7 @@
 
 EAPI=4
 
-inherit eutils cmake-utils flag-o-matic
+inherit cmake-utils flag-o-matic
 
 DESCRIPTION="Gentoo overlay with nfs-ganesha (userspace NFS server)"
 HOMEPAGE="https://github.com/nfs-ganesha/nfs-ganesha/wiki"
