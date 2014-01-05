@@ -4,8 +4,7 @@
 
 EAPI=4
 
-inherit eutils
-inherit cmake-utils flag-o-matic
+inherit eutils cmake-utils flag-o-matic
 
 DESCRIPTION="Gentoo overlay with nfs-ganesha (userspace NFS server)"
 HOMEPAGE="https://github.com/nfs-ganesha/nfs-ganesha/wiki"
@@ -25,5 +24,5 @@ DEPEND="app-doc/doxygen
 CMAKE_BUILD_TYPE="Release"
 
 pkg_pretend() {
-	is-flag -march=native && die 'cannot compile with march=native in cflags'
+	is-flag -march=native && die 'cannot compile with -march=native in cflags'
 }
