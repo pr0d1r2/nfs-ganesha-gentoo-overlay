@@ -14,9 +14,11 @@ S="${WORKDIR}/${P}-0.1.1-Source"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="-doc"
+IUSE="-doc -jemalloc"
 
-RDEPEND="app-crypt/mit-krb5 net-libs/libtirpc[kerberos] dev-libs/jemalloc"
+RDEPEND="app-crypt/mit-krb5
+		 net-libs/libtirpc[kerberos]
+		 jemalloc? ( dev-libs/jemalloc )"
 DEPEND="doc? ( app-doc/doxygen )
 	    net-fs/nfs-utils[nfsidmap,nfsv4,nfsv41,kerberos,libmount,nfsdcld]
 		${RDEPEND}"
