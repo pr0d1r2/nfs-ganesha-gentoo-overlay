@@ -17,5 +17,5 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="app-crypt/mit-krb5 net-libs/libtirpc[kerberos]"
+RDEPEND="app-crypt/mit-krb5 net-libs/libtirpc[kerberos] dev-libs/jemalloc"
 DEPEND="app-doc/doxygen ${RDEPEND}"
