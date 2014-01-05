@@ -5,6 +5,7 @@
 EAPI=4
 
 inherit eutils
+inherit cmake-utils
 
 DESCRIPTION="Gentoo overlay with nfs-ganesha (userspace NFS server)"
 HOMEPAGE="https://github.com/nfs-ganesha/nfs-ganesha/wiki"
